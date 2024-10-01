@@ -1,10 +1,10 @@
 # Restaurant Search App
 
-This is a restaurant search project that provides an interactive experience using Algolia for instant search. Users can search for restaurants, filter by cuisine type, and add or remove restaurants from the Algolia index directly from the interface.
+This is a restaurant search project that provides an interactive experience using Algolia for instant search. Users can search for restaurants, and add or remove restaurants from the Algolia index directly from the interface.
 
 ## 🚀 Live Demo
 
-[Live Demo](https://your-live-demo-link.com)
+[Live Demo](https://algolia-search-app.vercel.app/)
 
 ## ✨ Features
 
@@ -35,12 +35,7 @@ NEXT_PUBLIC_ALGOLIA_INDEX_NAME=restaurants_index
 
 ## ⚙️ Installation and Setup
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-repo/restaurant-search-app.git
-   cd restaurant-search-app
-   ```
+1. Clone the repository
 
 2. Install project dependencies using **pnpm**:
 
