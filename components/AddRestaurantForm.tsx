@@ -75,7 +75,6 @@ export const AddRestaurantForm = () => {
       onSubmit={handleSubmit}
       className="grid grid-cols-1 sm:grid-cols-2 gap-4"
     >
-      {isLoading ? "TRUE" : "FAKSE"}
       {Object.entries(formData).map(([key, value]) => (
         <div key={key} className="mb-4">
           <label
