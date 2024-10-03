@@ -1,6 +1,5 @@
 import { Restaurant } from "@/types/algolia";
 import { Hit } from "algoliasearch";
-import Image from "next/image";
 import React from "react";
 
 interface RestaurantItemProps {
@@ -13,15 +12,16 @@ const RestaurantCard: React.FC<RestaurantItemProps> = ({
   onDelete,
 }) => {
   return (
-    <div className="bg-white shadow-md rounded-lg flex mb-6 overflow-hidden transition-transform transform hover:scale-105">
-      <Image
+    <div
+      className="bg-white shadow-md rounded-lg flex mb-6 overflow-hidden transition-transform transform hover:scale-105"
+      id={`restaurant-card-${restaurant.objectID}`}
+    >
+      <img
         src={restaurant.image_url}
-        width={100}
-        height={100}
         alt={restaurant.name}
-        className="w-1/4 h-auto object-cover"
+        className="hidden md:block w-1/4 h-auto object-cover"
       />
-      <div className="p-4 w-2/3">
+      <div className="p-4 w-full md:w-2/3">
         <h2 className="text-lg font-bold text-gray-800">{restaurant.name}</h2>
         <p className="text-gray-600">
           {restaurant.address}, {restaurant.city}, {restaurant.state}
